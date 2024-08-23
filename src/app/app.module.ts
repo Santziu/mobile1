@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; // Import the FormsModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header.component';
-import { Child1Component } from './modulo1/child1/child1.component';
-import { Child2Component } from './modulo2/child2/child2.component';
+import { BindingPageComponent } from './pages/binding-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    BindingPageComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ],
   providers: [],
   bootstrap: [AppComponent],
 })
